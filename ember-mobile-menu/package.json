@@ -48,9 +48,9 @@
     "@glimmer/tracking": "^1.0.4",
     "body-scroll-lock": "^3.0.1",
     "ember-concurrency": "^3.0.0",
-    "ember-could-get-used-to-this": "^1.0.0",
     "ember-gesture-modifiers": "^5.0.0",
     "ember-on-resize-modifier": "^2.0.0",
+    "ember-resources": "^6.4.2",
     "ember-set-body-class": "^1.0.1",
     "wobble": "^1.5.1"
   },
