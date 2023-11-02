@@ -54,9 +54,6 @@ importers:
       ember-concurrency:
         specifier: ^2.1.0 || ^3.0.0
         version: 3.1.1(ember-source@5.4.0)
-      ember-could-get-used-to-this:
-        specifier: ^1.0.0
-        version: 1.0.1
       ember-gesture-modifiers:
         specifier: ^5.0.0
         version: 5.0.1(ember-source@5.4.0)(webpack@5.89.0)
@@ -4395,6 +4392,7 @@ packages:
   /babel-plugin-htmlbars-inline-precompile@3.2.0:
     resolution: {integrity: sha512-IUeZmgs9tMUGXYu1vfke5I18yYJFldFGdNFQOWslXTnDWXzpwPih7QFduUqvT+awDpDuNtXpdt5JAf43Q1Hhzg==}
     engines: {node: 8.* || 10.* || >= 12.*}
+    dev: true
 
   /babel-plugin-htmlbars-inline-precompile@5.3.1:
     resolution: {integrity: sha512-QWjjFgSKtSRIcsBhJmEwS2laIdrA6na8HAlc/pEAhjHgQsah/gMiBFRZvbQTy//hWxR4BMwV7/Mya7q5H8uHeA==}
@@ -5393,6 +5391,7 @@ packages:
       heimdalljs-logger: 0.1.10
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /broccoli-output-wrapper@3.2.5:
     resolution: {integrity: sha512-bQAtwjSrF4Nu0CK0JOy5OZqw9t5U0zzv2555EA/cF8/a8SLDTIetk9UgrtMVw7qKLKdSpOZ2liZNeZZDaKgayw==}
@@ -5502,6 +5501,7 @@ packages:
       symlink-or-copy: 1.3.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /broccoli-plugin@4.0.7:
     resolution: {integrity: sha512-a4zUsWtA1uns1K7p9rExYVYG99rdKeGRymW0qOCNkvDPHQxVi3yVyJHhQbM3EZwdt2E0mnhr5e0c/bPpJ7p3Wg==}
@@ -7929,6 +7929,7 @@ packages:
       walk-sync: 2.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /ember-cli-htmlbars@5.7.2:
     resolution: {integrity: sha512-Uj6R+3TtBV5RZoJY14oZn/sNPnc+UgmC8nb5rI4P3fR/gYoyTFIZSXiIM7zl++IpMoIrocxOrgt+mhonKphgGg==}
@@ -8413,6 +8414,7 @@ packages:
       ember-cli-htmlbars: 4.5.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /ember-data@5.3.0(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.4.0):
     resolution: {integrity: sha512-ca8udUa2SrWyYxPckYc89Fdv/9pCG3X360zHvlGxtB4C87o3dWp6sle98tP9G1TjximKhrU/PMrqpdhJ8rOGtA==}
@@ -17467,7 +17469,7 @@ packages:
     name: ember-mobile-menu
     engines: {node: 18.* || >= 20}
     peerDependencies:
-      ember-source: '>=4.0.0'
+      ember-source: '>=4.5.0'
     dependencies:
       '@ember/legacy-built-in-components': 0.5.0(ember-source@5.4.0)
       '@ember/render-modifiers': 2.1.0(ember-source@5.4.0)
