@@ -34,10 +34,10 @@ importers:
         specifier: ^3.0.0
         version: 3.1.0
       '@glimmer/component':
-        specifier: ^1.0.4
+        specifier: 1.1.2
         version: 1.1.2
       '@glimmer/tracking':
-        specifier: ^1.0.4
+        specifier: 1.1.2
         version: 1.1.2
       body-scroll-lock:
         specifier: ^3.0.1
