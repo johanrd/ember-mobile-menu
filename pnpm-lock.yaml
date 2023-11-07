@@ -187,10 +187,10 @@ importers:
         specifier: ^1.0.0
         version: 1.8.7
       '@glimmer/component':
-        specifier: ^1.1.2
+        specifier: ^1.0.4
         version: 1.1.2(@babel/core@7.23.3)
       '@glimmer/tracking':
-        specifier: ^1.1.2
+        specifier: ^1.0.4
         version: 1.1.2
       body-scroll-lock:
         specifier: ^3.0.1
@@ -14293,7 +14293,7 @@ packages:
       got: 12.6.1
       registry-auth-token: 5.0.2
       registry-url: 6.0.1
-      semver: 7.5.1
+      semver: 7.5.4
     dev: true
 
   /pad-start@1.0.2:
