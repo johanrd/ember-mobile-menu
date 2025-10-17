@@ -1,0 +1,178 @@
+{{page-title "Fullscreen Demo - ember-mobile-menu"}}
+
+<MobileMenuWrapper @openDetectionWidth={{this.openDetectionWidth}} as |mmw|>
+  <mmw.MobileMenu @maskEnabled={{true}} @type={{this.type}} @shadowEnabled={{true}} @mode={{this.mode}} as |mm|>
+    <div class="mobile-menu__header docs-flex docs-flex-col docs-justify-between">
+      <div class="header__text">
+        <h2 class="docs-text-white docs-p-4">Menu</h2>
+      </div>
+      <div class="header__btn docs-flex docs-justify-between">
+        <div class="docs-p-4 docs-text-white">
+          Nick Schot
+          <small class="docs-block">
+            info@example.com
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu__body">
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__nav-item">
+          <LinkTo @route="index" {{on "click" mm.actions.close}}>Home</LinkTo>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <LinkTo @route="docs" {{on "click" mm.actions.close}}>Docs</LinkTo>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Settings</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Profile</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>About</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Team</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Projects</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Calendar</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Reports</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Analytics</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Messages</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Notifications</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Tasks</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Files</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Resources</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Help</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Support</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Contact</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Privacy</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Terms</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>FAQ</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Blog</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Community</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Feedback</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" {{on "click" mm.actions.close}}>Changelog</a>
+        </li>
+      </ul>
+    </div>
+  </mmw.MobileMenu>
+
+  <mmw.Content>
+    <div class="docs-min-h-screen">
+      <header class="docs-bg-brand docs-text-white docs-p-4 docs-flex docs-justify-between docs-items-center">
+        <mmw.Toggle class="docs-no-underline docs-bg-white docs-text-brand docs-text-xs docs-px-3 docs-py-2 docs-rounded docs-shadow-md hover:docs-shadow-lg docs-transition hover:docs-nudge-t docs-font-bold docs-inline-block docs-uppercase">
+          Menu
+        </mmw.Toggle>
+        <h1 class="docs-text-xl docs-font-bold">Fullscreen Demo</h1>
+        <div class="docs-w-16"></div>
+      </header>
+
+      <main class="docs-p-4">
+        <div class="docs-max-w-2xl docs-mx-auto">
+          <h2 class="docs-text-2xl docs-font-bold docs-mb-4">Test Scroll Locking</h2>
+          <p class="docs-mb-4">
+            This is a fullscreen demo to test background scroll locking on iOS Safari.
+            Open the menu and try to scroll this content - it should be locked.
+          </p>
+
+          <div class="mobile-menu-example-options docs-text-left docs-mb-8 docs-p-4 docs-bg-gray-100 docs-rounded">
+            <div class="docs-flex docs-justify-around docs-flex-wrap">
+              <div class="docs-mb-4">
+                <h3 class="docs-font-bold docs-mb-2">Mode</h3>
+                <div class="docs-flex docs-flex-col">
+                  <label><input type="radio" name="mode" {{on "click" (fn (mut this.mode) "default")}} checked={{eq this.mode "default"}}>default</label>
+                  <label><input type="radio" name="mode" {{on "click" (fn (mut this.mode) "reveal")}} checked={{eq this.mode "reveal"}}>reveal</label>
+                  <label><input type="radio" name="mode" {{on "click" (fn (mut this.mode) "ios")}} checked={{eq this.mode "ios"}}>ios</label>
+                  <label><input type="radio" name="mode" {{on "click" (fn (mut this.mode) "push")}} checked={{eq this.mode "push"}}>push</label>
+                  <label><input type="radio" name="mode" {{on "click" (fn (mut this.mode) "squeeze")}} checked={{eq this.mode "squeeze"}}>squeeze</label>
+                  <label><input type="radio" name="mode" {{on "click" (fn (mut this.mode) "squeeze-reveal")}} checked={{eq this.mode "squeeze-reveal"}}>squeeze-reveal</label>
+                </div>
+              </div>
+
+              <div class="docs-mb-4">
+                <h3 class="docs-font-bold docs-mb-2">Type</h3>
+                <div class="docs-flex docs-flex-col docs-mb-3">
+                  <label><input type="radio" name="side" {{on "click" (fn (mut this.type) "left")}} checked={{eq this.type "left"}}>left</label>
+                  <label><input type="radio" name="side" {{on "click" (fn (mut this.type) "right")}} checked={{eq this.type "right"}}>right</label>
+                </div>
+
+                <h3 class="docs-font-bold docs-mb-2">Open detection width</h3>
+                <div class="docs-flex docs-flex-col docs-mb-3">
+                  <label><input type="radio" name="openDetectionWidth" {{on "click" (fn (mut this.openDetectionWidth) -1)}} checked={{eq this.openDetectionWidth -1}}>-1 (whole width)</label>
+                  <label><input type="radio" name="openDetectionWidth" {{on "click" (fn (mut this.openDetectionWidth) 30)}} checked={{eq this.openDetectionWidth 30}}>30 (px, drag from edge)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="docs-text-xl docs-font-bold docs-mb-2">Scrollable Content</h3>
+          <p class="docs-mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          {{#each (array 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20) as |num|}}
+            <div class="docs-mb-4 docs-p-4 docs-bg-white docs-rounded docs-shadow">
+              <h4 class="docs-font-bold docs-mb-2">Section {{num}}</h4>
+              <p>
+                This is section {{num}} with some content. When the menu is open, you should not be able to scroll this background content on iOS Safari. The overflow: hidden CSS should prevent scrolling.
+              </p>
+              <p class="docs-mt-2">
+                Try opening the menu with the "Menu" button or by swiping from the left edge (depending on openDetectionWidth setting), then attempt to scroll this page. On iOS Safari, the page should be locked and not scroll.
+              </p>
+            </div>
+          {{/each}}
+
+          <div class="docs-p-4 docs-bg-green-100 docs-rounded docs-mb-4">
+            <h4 class="docs-font-bold docs-mb-2">Testing Instructions for iOS Safari:</h4>
+            <ol class="docs-list-decimal docs-list-inside">
+              <li>Open this page on an iPhone in Safari</li>
+              <li>Tap the "Menu" button or swipe from the left edge</li>
+              <li>Try to scroll the background content</li>
+              <li>The content should NOT scroll (body is locked)</li>
+              <li>Close the menu and scrolling should work again</li>
+            </ol>
+          </div>
+        </div>
+      </main>
+    </div>
+  </mmw.Content>
+</MobileMenuWrapper>

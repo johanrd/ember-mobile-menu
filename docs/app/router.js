@@ -16,5 +16,6 @@ Router.map(function () {
       this.route('menu');
     });
   });
+  this.route('fullscreen-demo');
   this.route('not-found', { path: '/*path' });
 });
