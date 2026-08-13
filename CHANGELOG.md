@@ -1,5 +1,49 @@
 # Changelog
 
+## Release (2026-08-13)
+
+* ember-mobile-menu 7.0.0 (major)
+
+#### :boom: Breaking Change
+* `ember-mobile-menu`
+  * [#1160](https://github.com/nickschot/ember-mobile-menu/pull/1160) Remove @ember/render-modifiers ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :rocket: Enhancement
+* `ember-mobile-menu`
+  * [#1339](https://github.com/nickschot/ember-mobile-menu/pull/1339) Widen concurrency range ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1156](https://github.com/nickschot/ember-mobile-menu/pull/1156) Remove v1 addons: test-waiters and cached-decorator-polyfill ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1270](https://github.com/nickschot/ember-mobile-menu/pull/1270) Replace ember-on-resize-modifier with ember-primitives (v2) version ([@nickschot](https://github.com/nickschot))
+  * [#1269](https://github.com/nickschot/ember-mobile-menu/pull/1269) Replace ember-set-body-class with ember-primitives (v2) version ([@nickschot](https://github.com/nickschot))
+  * [#1245](https://github.com/nickschot/ember-mobile-menu/pull/1245) Deprecate decorator syntax of ember-concurrency  ([@johanrd](https://github.com/johanrd))
+  * [#1158](https://github.com/nickschot/ember-mobile-menu/pull/1158) Remove unneeded peers ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* Other
+  * [#1310](https://github.com/nickschot/ember-mobile-menu/pull/1310) Add 6.4 and 6.8 to LTS testing ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :memo: Documentation
+* [#1244](https://github.com/nickschot/ember-mobile-menu/pull/1244) Update CONTRIBUTING.md to reflect practice in v2 addon ([@johanrd](https://github.com/johanrd))
+
+#### :house: Internal
+* `ember-mobile-menu`
+  * [#1351](https://github.com/nickschot/ember-mobile-menu/pull/1351) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#1352](https://github.com/nickschot/ember-mobile-menu/pull/1352) Revert "Prepare Release" 6.1.0 ([@nickschot](https://github.com/nickschot))
+  * [#1321](https://github.com/nickschot/ember-mobile-menu/pull/1321) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#1118](https://github.com/nickschot/ember-mobile-menu/pull/1118) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#1303](https://github.com/nickschot/ember-mobile-menu/pull/1303) Update test-app to Vite ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* Other
+  * [#1350](https://github.com/nickschot/ember-mobile-menu/pull/1350) Remove NPM token from publish config ([@nickschot](https://github.com/nickschot))
+  * [#1347](https://github.com/nickschot/ember-mobile-menu/pull/1347) Setup OIDC required permissions ([@nickschot](https://github.com/nickschot))
+  * [#1340](https://github.com/nickschot/ember-mobile-menu/pull/1340) Add renovate config catered to package dev ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1161](https://github.com/nickschot/ember-mobile-menu/pull/1161) Fix floating dependencies test ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1129](https://github.com/nickschot/ember-mobile-menu/pull/1129) Docs smoke test & lint config fixes ([@nickschot](https://github.com/nickschot))
+  * [#1128](https://github.com/nickschot/ember-mobile-menu/pull/1128) Fix addon-docs deployment ([@nickschot](https://github.com/nickschot))
+  * [#1124](https://github.com/nickschot/ember-mobile-menu/pull/1124) Get rid of dependenciesMeta injected and use pnpm flags only when needed in CI ([@nickschot](https://github.com/nickschot))
+
+#### Committers: 4
+- GitHub Actions [Bot] ([@github-actions](https://github.com/apps/github-actions))
+- Johan Røed ([@johanrd](https://github.com/johanrd))
+- Nick Schot ([@nickschot](https://github.com/nickschot))
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2026-02-27)
 
 * ember-mobile-menu 6.1.0 (minor)
